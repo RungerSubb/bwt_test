@@ -1,0 +1,78 @@
+.parent{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+    background: transparent;
+}
+.child {
+    background: transparent;
+    width: 45%;
+    height: 45%;
+}
+
+
+
+.tab-pane{
+    background: white;
+}
+.tab-content{
+    width: 100%;
+    height: max-content;
+}
+
+
+
+.new-user{
+    width: 85%;
+    margin: auto auto;
+}
+.right-column{
+ margin-left: 0;
+}
+
+
+.old-user{
+    width: 65%;
+    margin: auto auto;
+}
+img{
+    max-height: 120px;
+}
+.img-parent{
+    width: max-content;
+    height: auto;
+    margin: auto auto;
+}
+
+@media (max-width: 720px) {
+
+    img{
+        max-height: 90px;
+    }
+    .old-user{
+        width: 85%;
+    }
+    .btn{
+        width: 100%;
+        font-size: 80%;
+    }
+    .form-control{
+        font-size: 80%;
+    }
+    .nav-item{
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 1280px) and (max-height: 1024px){
+    .parent{
+        top: -7%;
+    }
+}
