@@ -9,17 +9,15 @@ include_once '../models/UsersModel.php';
  * @return user data in json
  */
 function registerAction(){
-
-    $email = isset($_POST['new-email']) ? $_POST['new-email'] :null;
-    $pass1 = isset($_POST['pass1'])? $_POST['pass1'] :null;
-    $pass2 = isset($_POST['pass2'])? $_POST['pass2'] :null;
-    $firstName = isset($_POST['first-name'])? $_POST['first-name'] :null;
-    $lastName = isset($_POST['last-name'])? $_POST['last-name'] :null;
-    $birthDate = isset($_POST['birth-date'])? $_POST['birth-date'] :null;
+    $email = isset($_POST['email']) ? $_POST['email'] :null;
+    $pass1 = isset($_POST['passNew'])? $_POST['passNew'] :null;
+    $pass2 = isset($_POST['passConf'])? $_POST['passConf'] :null;
+    $firstName = isset($_POST['firstName'])? $_POST['firstName'] :null;
+    $lastName = isset($_POST['lastName'])? $_POST['lastName'] :null;
+    $birthDate = isset($_POST['birthDate'])? $_POST['birthDate'] :null;
     $sex = isset($_POST['sex'])? $_POST['sex'] : null;
 
     $resData = checkRegisterParams($email, $pass1, $pass2, $firstName, $lastName);
-
 
     if(!$resData && checkUserEmail($email)){
         $resData['success'] = false;

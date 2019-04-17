@@ -17,7 +17,9 @@
     height: 45%;
 }
 
+.form-control:focus {
 
+}
 
 .tab-pane{
     background: white;

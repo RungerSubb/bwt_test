@@ -12,44 +12,45 @@
                 <div class="img-parent">
                     <img src="{$templateWebPath}css/img/logo.png">
                 </div>
-                <div class="old-user" id="login-form">
+                <form method="POST" action="/user/login/" class="old-user" id="login-form">
                     <div class="form-group">
                         <input type="email" name="email" class="form-control" id="email"  placeholder="Email">
                     </div>
                     <div class="form-group">
-                        <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                        <input type="password" name="pass" class="form-control" id="password" placeholder="Password">
                     </div>
-                    <button type="submit" class="btn btn-primary" onclick="loginUser()">Sign in</button>
-                </div>
+                    <br/>
+                    <button type="submit" class="btn btn-primary" id="loginBtn">Sign in</button>
+                </form>
                 <br/>
             </div>
             <div class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab">
                 <br/>
-                <div class="new-user" id="register-form">
+                <form method="POST" action="/user/register/" class="new-user" id="register-form">
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                            <input type="email" class="form-control" id="new-email" name="new-email" placeholder="Email">
+                            <input type="email" class="form-control" id="new-email" name="email" placeholder="Email">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <input type="password" class="form-control" id="pass1" name="pass1" placeholder="Password">
+                            <input type="password" class="form-control" id="pass1" name="passNew" placeholder="Password">
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="password" class="form-control" id="pass2" name="pass2" placeholder="Confirm password">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <input class="form-control" id="first-name" name="first-name"  placeholder="First name">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input class="form-control" id="last-name" name="last-name" placeholder="Last name">
+                            <input type="password" class="form-control" id="pass2" name="passConf" placeholder="Confirm password">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <input id="birth-date" placeholder="Birth date" name="birth-date" class="form-group col-md-10"/>
+                            <input class="form-control" id="first-name" name="firstName"  placeholder="First name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input class="form-control" id="last-name" name="lastName" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input id="birth-date" placeholder="Birth date" name="birthDate" class="form-group col-md-10"/>
                         </div>
                         <div class="form-group col-md-6">
                             <select id="sex" placeholder="Sex" name="sex" class="form-control">
@@ -59,14 +60,29 @@
                             </select>
                         </div>
                     </div>
-                    <button id="register_new_user" type="submit" class="btn btn-primary" onclick="registerNewUser()">Submit</button>
-                </div>
+                    <button id="registerBtn" type="submit" class="btn btn-primary">Submit</button>
+                </form>
                 <br/>
             </div>
         </div>
     </div>
 </div>
 
+<div class="modal fade" id="fail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Error</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="fail-body">
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="js/register.js"></script>
-
-
+<script src="js/validation/dist/jquery.validate.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
