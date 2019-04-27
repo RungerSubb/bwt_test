@@ -10,6 +10,20 @@ img{
     height: auto;
     margin: auto auto;
 }
+.login-tabs{
+    background: white;
+}
+.new-user{
+     width: 85%;
+     margin: auto auto;
+ }
+.input-tab{
+    background: white;
+}
+.user-back{
+    height: max-content;
+    background: white;
+}
 
 @media (max-width: 720px) {
 
@@ -21,3 +35,4 @@ img{
         width: 85%;
     }
 }
+

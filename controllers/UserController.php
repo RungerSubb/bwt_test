@@ -33,6 +33,7 @@ function registerAction(){
             $resData['success'] = 1;
             $resData['name'] = $userData["firstName"];
             $resData['email'] = $userData["email"];
+            $resData['lastName'] = $userData["lastName"];
 
             $_SESSION['user'] = $userData;
             $_SESSION['user']['displayName'] = $userData["firstName"];
@@ -68,6 +69,7 @@ function loginAction(){
               $resData['success'] = 1;
               $resData['email'] = $userData["email"];
               $resData['name'] = $userData["firstName"];
+              $resData['lastName'] = $userData["lastName"];
 
               $_SESSION['user'] = $userData;
               $_SESSION['user']['displayName'] = $userData["firstName"];
@@ -78,5 +80,22 @@ function loginAction(){
              $resData['message'] = "Wrong email or password";
         }
     }
-    echo  json_encode($resData);
+    echo json_encode($resData);
+}
+
+/**
+ * Logout action
+ */
+function logoutAction(){
+
+   if($_SESSION['user']){
+       unset($_SESSION['user']);
+        $result['success'] = 1;
+        $result['tag'] = 'quit';
+    }
+    else{
+        $result['success'] = 0;
+        $result['message'] = 'Logout error';
+    }
+    echo json_encode($result);
 }

@@ -2,7 +2,8 @@
 /**
  * configuration file
  */
-
+//start new session
+session_start();
 //> controller constants
 define('PathPrefix', '../controllers/');
 define('PathPostfix', 'Controller.php');
