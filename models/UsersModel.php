@@ -105,7 +105,7 @@ function registerNewUser($email, $password, $firstName, $lastName, $birthDate = 
 
 
 /**
- * Validation of input information
+ * Validation of  information
  *
  * @param $email email address
  * @param $password password
@@ -123,8 +123,6 @@ function checkInputParams($email, $password){
     }
     return $res;
 }
-
-
 /**
  *  Input in system
  *

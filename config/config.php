@@ -19,7 +19,6 @@ define('TemplatePostfix', '.tpl');
 define('TemplateWebPath', "/templates/{$template}/");
 //<
 
-
 //initialize template engine Smarty
 require('../library/Smarty/libs/Smarty.class.php');
 $smarty = new Smarty();

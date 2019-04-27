@@ -27,7 +27,8 @@ function registerAction(){
     if(!$resData){
         $password = md5($pass1);
         $userData = registerNewUser($email, $password, $firstName, $lastName, $birthDate, $sex);
-        if($userData['success']) {
+
+       if($userData['success']) {
             $resData['message'] = "Register completed successful";
             $resData['success'] = 1;
             $resData['name'] = $userData["firstName"];
@@ -51,7 +52,7 @@ function registerAction(){
  */
 function loginAction(){
     $email = isset($_POST['email']) ? $_POST['email'] :null;
-    $password = isset($_POST['password'])? $_POST['password'] :null;
+    $password = isset($_POST['pass'])? $_POST['pass'] :null;
 
     $resData = checkInputParams($email, $password);
 
@@ -60,21 +61,22 @@ function loginAction(){
         $resData['message'] = "User with the same email ('{$email}') not exists";
     }
     if(!$resData) {
-        $password = $password = md5($password);
+        $password =  md5($password);
         $userData = login($email, $password);
         if($userData) {
               $resData['message'] = "Input completed successful";
               $resData['success'] = 1;
-              $resData['email'] = $userData['email'];
+              $resData['email'] = $userData["email"];
               $resData['name'] = $userData["firstName"];
 
               $_SESSION['user'] = $userData;
               $_SESSION['user']['displayName'] = $userData["firstName"];
+
         }
         else{
              $resData['success'] = 0;
-             $resData['message'] = "login error";
+             $resData['message'] = "Wrong email or password";
         }
     }
-    echo json_encode($resData);
+    echo  json_encode($resData);
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-21 13:36:09
-  from 'C:\xampp\htdocs\bwt_test.com\views\default\index.tpl' */
+/* Smarty version 3.1.33, created on 2019-04-27 13:36:03
+  from 'C:\xampp\htdocs\bwt_test.loc\views\default\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cbc55a900f3e3_25157039',
+  'unifunc' => 'content_5cc43ea3b55c44_78197126',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '5df6f709e3d60ed21e137c7cf5446b1b7913e70d' => 
+    'aaa539548b6d5ebd20ab12a0f00637afe07b91e6' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\bwt_test.com\\views\\default\\index.tpl',
-      1 => 1555846544,
+      0 => 'C:\\xampp\\htdocs\\bwt_test.loc\\views\\default\\index.tpl',
+      1 => 1556364963,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:success.wind.tpl' => 1,
   ),
 ),false)) {
-function content_5cbc55a900f3e3_25157039 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cc43ea3b55c44_78197126 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
 <head>
     <title><?php echo $_smarty_tpl->tpl_vars['pageTitle']->value;?>
@@ -68,34 +68,56 @@ css/img/logo.png" />
     <div class="child">
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-input-tab" data-toggle="tab" href="#nav-first" role="tab" aria-controls="nav-first" aria-selected="true"><?php echo $_smarty_tpl->tpl_vars['tab1Name']->value;?>
+                <a class="nav-item nav-link d-none" id="nav-first-tab" data-toggle="tab" href="#nav-first" role="tab" aria-controls="nav-first" aria-selected="false">User</a>
+                <a class="nav-item nav-link active" id="nav-second-tab" data-toggle="tab" href="#nav-second" role="tab" aria-controls="nav-second" aria-selected="true"><?php echo $_smarty_tpl->tpl_vars['tab1Name']->value;?>
 </a>
-                <a class="nav-item nav-link" id="nav-register-tab" data-toggle="tab" href="#nav-second" role="tab" aria-controls="nav-second" aria-selected="false"><?php echo $_smarty_tpl->tpl_vars['tab2Name']->value;?>
+                <a class="nav-item nav-link" id="nav-third-tab" data-toggle="tab" href="#nav-third" role="tab" aria-controls="nav-third" aria-selected="false"><?php echo $_smarty_tpl->tpl_vars['tab2Name']->value;?>
 </a>
-                <a class="nav-item nav-link" id="nav-register-tab" data-toggle="tab" href="#nav-third" role="tab" aria-controls="nav-third" aria-selected="false"><?php echo $_smarty_tpl->tpl_vars['tab3Name']->value;?>
+                <a class="nav-item nav-link" id="nav-fourth-tab" data-toggle="tab" href="#nav-fourth" role="tab" aria-controls="nav-fourth" aria-selected="false"><?php echo $_smarty_tpl->tpl_vars['tab5Name']->value;?>
 </a>
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-first" role="tabpanel" aria-labelledby="nav-first-tab">
-                <?php ob_start();
+            <div class="tab-pane fade show" id="nav-first" role="tabpanel" aria-labelledby="nav-first-tab">
+
+            </div>
+            <div class="tab-pane fade show active" id="nav-second" role="tabpanel" aria-labelledby="nav-second-tab">
+                <div class="t11">
+                    <?php ob_start();
 echo $_smarty_tpl->tpl_vars['tab1']->value;
 $_prefixVariable1 = ob_get_clean();
 $_smarty_tpl->_subTemplateRender($_prefixVariable1, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
 ?>
-            </div>
-            <div class="tab-pane fade" id="nav-second" role="tabpanel" aria-labelledby="nav-second-tab">
-                <?php ob_start();
-echo $_smarty_tpl->tpl_vars['tab2']->value;
+                </div>
+                <div class="t12 d-none">
+                    <?php ob_start();
+echo $_smarty_tpl->tpl_vars['tab3']->value;
 $_prefixVariable2 = ob_get_clean();
 $_smarty_tpl->_subTemplateRender($_prefixVariable2, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
 ?>
+                </div>
             </div>
-            <div class="tab-pane fade" id="nav-third" role="tabpanel" aria-labelledby="nav-third-tab">
-                <?php ob_start();
-echo $_smarty_tpl->tpl_vars['tab3']->value;
+            <div class="tab-pane fade show" id="nav-third" role="tabpanel" aria-labelledby="nav-third-tab">
+                <div class="t21">
+                    <?php ob_start();
+echo $_smarty_tpl->tpl_vars['tab2']->value;
 $_prefixVariable3 = ob_get_clean();
 $_smarty_tpl->_subTemplateRender($_prefixVariable3, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
+?>
+                </div>
+                <div class="t22 d-none">
+                    <?php ob_start();
+echo $_smarty_tpl->tpl_vars['tab4']->value;
+$_prefixVariable4 = ob_get_clean();
+$_smarty_tpl->_subTemplateRender($_prefixVariable4, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
+?>
+                </div>
+            </div>
+            <div class="tab-pane fade show" id="nav-fourth" role="tabpanel" aria-labelledby="nav-fourth-tab">
+                <?php ob_start();
+echo $_smarty_tpl->tpl_vars['tab5']->value;
+$_prefixVariable5 = ob_get_clean();
+$_smarty_tpl->_subTemplateRender($_prefixVariable5, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
 ?>
             </div>
         </div>

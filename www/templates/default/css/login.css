@@ -1,0 +1,23 @@
+.old-user{
+    width: 65%;
+    margin: auto auto;
+}
+img{
+    max-height: 120px;
+}
+.img-parent{
+    width: max-content;
+    height: auto;
+    margin: auto auto;
+}
+
+@media (max-width: 720px) {
+
+    img {
+        max-height: 90px;
+    }
+
+    .old-user {
+        width: 85%;
+    }
+}

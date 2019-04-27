@@ -39,14 +39,3 @@ function db($value = null, $die = 1){
     echo '<pre/>';
     if($die)die();
 }
-
-
-function createRsArray($rs){
-    if(!$rs) return false;
-    $result = array();
-    while ($row = mysqli_fetch_assoc($rs)){
-        $result[] = $row;
-    }
-    return $result;
-
-}

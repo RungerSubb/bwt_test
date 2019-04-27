@@ -1,0 +1,9 @@
+.message{
+    resize: none;
+}
+.g-recaptcha{
+    display: inline-block;
+}
+.container{
+    text-align: center;
+}

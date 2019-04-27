@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-21 13:36:09
-  from 'C:\xampp\htdocs\bwt_test.com\views\default\index.tpl' */
+/* Smarty version 3.1.33, created on 2019-04-23 10:58:19
+  from 'C:\xampp\htdocs\bwt_test.loc\views\default\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cbc55a900f3e3_25157039',
+  'unifunc' => 'content_5cbed3abbd6347_10583375',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '5df6f709e3d60ed21e137c7cf5446b1b7913e70d' => 
+    '8d19b2100d5e8060f122051e051144f6d86e7955' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\bwt_test.com\\views\\default\\index.tpl',
-      1 => 1555846544,
+      0 => 'C:\\xampp\\htdocs\\bwt_test.loc\\views\\default\\index.tpl',
+      1 => 1555961157,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:success.wind.tpl' => 1,
   ),
 ),false)) {
-function content_5cbc55a900f3e3_25157039 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cbed3abbd6347_10583375 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
 <head>
     <title><?php echo $_smarty_tpl->tpl_vars['pageTitle']->value;?>
@@ -68,11 +68,11 @@ css/img/logo.png" />
     <div class="child">
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-input-tab" data-toggle="tab" href="#nav-first" role="tab" aria-controls="nav-first" aria-selected="true"><?php echo $_smarty_tpl->tpl_vars['tab1Name']->value;?>
+                <a class="nav-item nav-link active" id="nav-first-tab" data-toggle="tab" href="#nav-first" role="tab" aria-controls="nav-first" aria-selected="true"><?php echo $_smarty_tpl->tpl_vars['tab1Name']->value;?>
 </a>
-                <a class="nav-item nav-link" id="nav-register-tab" data-toggle="tab" href="#nav-second" role="tab" aria-controls="nav-second" aria-selected="false"><?php echo $_smarty_tpl->tpl_vars['tab2Name']->value;?>
+                <a class="nav-item nav-link" id="nav-second-tab" data-toggle="tab" href="#nav-second" role="tab" aria-controls="nav-second" aria-selected="false"><?php echo $_smarty_tpl->tpl_vars['tab2Name']->value;?>
 </a>
-                <a class="nav-item nav-link" id="nav-register-tab" data-toggle="tab" href="#nav-third" role="tab" aria-controls="nav-third" aria-selected="false"><?php echo $_smarty_tpl->tpl_vars['tab3Name']->value;?>
+                <a class="nav-item nav-link" id="nav-third-tab" data-toggle="tab" href="#nav-third" role="tab" aria-controls="nav-third" aria-selected="false"><?php echo $_smarty_tpl->tpl_vars['tab3Name']->value;?>
 </a>
             </div>
         </nav>

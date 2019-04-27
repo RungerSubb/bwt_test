@@ -1,15 +1,7 @@
 /**
- * datepicker handler
+ *  feedback validation
  */
-$('#birth-date').datepicker({
-    format: "yyyy/mm/dd",
-    uiLibrary: 'bootstrap4'
-});
-
-/**
- *  Register form validation
- */
-$("#register-form").validate({
+$("#feedback-form").validate({
     rules: {
         email: {
             required: true,
@@ -52,3 +44,8 @@ $("#register-form").validate({
         }
     }
 });
+
+
+
+
+
