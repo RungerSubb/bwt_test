@@ -29,14 +29,11 @@ function registerAction(){
         $userData = registerNewUser($email, $password, $firstName, $lastName, $birthDate, $sex);
 
        if($userData['success']) {
-            $resData['message'] = "Register completed successful";
-            $resData['success'] = 1;
-            $resData['name'] = $userData["firstName"];
-            $resData['email'] = $userData["email"];
-            $resData['lastName'] = $userData["lastName"];
+           $resData['success'] = 1;
+           $resData['message'] = "Register completed successful";
+           $resData['tag'] = 'register';
 
-            $_SESSION['user'] = $userData;
-            $_SESSION['user']['displayName'] = $userData["firstName"];
+           $_SESSION['user'] = $userData;
         }
         else{
             $resData['success'] = 0;
@@ -65,15 +62,9 @@ function loginAction(){
         $password =  md5($password);
         $userData = login($email, $password);
         if($userData) {
-              $resData['message'] = "Input completed successful";
-              $resData['success'] = 1;
-              $resData['email'] = $userData["email"];
-              $resData['name'] = $userData["firstName"];
-              $resData['lastName'] = $userData["lastName"];
-
-              $_SESSION['user'] = $userData;
-              $_SESSION['user']['displayName'] = $userData["firstName"];
-
+            $resData['success'] = 1;
+            $resData['message'] = "Input completed successful";
+            $_SESSION['user'] = $userData;
         }
         else{
              $resData['success'] = 0;
@@ -89,7 +80,7 @@ function loginAction(){
 function logoutAction(){
 
    if($_SESSION['user']){
-       unset($_SESSION['user']);
+        unset($_SESSION['user']);
         $result['success'] = 1;
         $result['tag'] = 'quit';
     }

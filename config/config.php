@@ -19,7 +19,10 @@ define('TemplatePostfix', '.tpl');
 // way to template files in web
 define('TemplateWebPath', "/templates/{$template}/");
 //<
+define('fdb-show', "
 
+
+");
 //initialize template engine Smarty
 require('../library/Smarty/libs/Smarty.class.php');
 $smarty = new Smarty();

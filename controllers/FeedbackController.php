@@ -8,8 +8,14 @@ include_once '../models/FeedbackModel.php';
  * Get feedback list
  */
 function getAll(){
-
-
+    $result = getFeedback();
+    if(!$result) {
+        $result['success'] = 0;
+        $result['message'] = 'Sorry, we have no feedback';
+        return json_encode($result);
+    } else {
+        return( createOutputArray($result));
+    }
 }
 
 /**
@@ -36,6 +42,7 @@ function sendAction(){
             if ($modelResult) {
                 $result["success"] = 1;
                 $result["tag"] = 'feedback';
+                $result["fdb"] = createOneMoreFeedbackForm($modelResult["name"], $modelResult["email"], $modelResult["message"]);
             } else {
                 $result["success"] = 0;
                 $result["message"] = 'Database error';

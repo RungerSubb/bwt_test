@@ -10,18 +10,23 @@ $('form').submit(function(e) {
         success: function (data) {
             if(data.success) {
                 if (data.tag == 'feedback') {
-                    document.getElementById('success-body').innerHTML = 'Thanks for you feedback!';
+                    $('#success-body').html("Thanks for you feedback!");
                     $('#success-wind').modal('show');
+                    $('#feedback-message').val('');
+                    if($('#info-email') != null)
+                        $('#fdb-all').append(data.fdb);
                 }
-                else if(data.tag == 'quit'){
-                    setGuestView();
+                else {
+                    if(data.tag == 'register'){
+                        $('#success-body').html(data.message);
+                        $('#success-wind').modal('show');
+                    }
+                    location.reload();
                 }
-                else{
-                    setUserView(data);
-                }
+
             }
             else {
-                document.getElementById('fail-body').innerHTML = 'Server answer: ' + data.message;
+                $('#fail-body').html('Server answer: ' + data.message);
                 $('#fail').modal('show');
             }
         }
@@ -29,35 +34,6 @@ $('form').submit(function(e) {
     e.preventDefault();
 })
 
-function setUserView(data){
-    let guestElements = $('.guest');
-    $.each(guestElements, function () {
-        $(this).addClass("d-none");
-    })
-    let userElements = $('.user');
-    $.each(userElements, function () {
-        $(this).removeClass("d-none");
-    })
-    $('#info-name').val(data.name);
-    $('#info-lastName').val(data.lastName);
-    $('#info-email').val(data.email);
-
-    $('#feedback-email').val(data.email);
-    $('#feedback-name').val(data.name);
-    $('#feedback-email').prop("disabled", true);
-    $('#feedback-name').prop("disabled", true);
-}
-function setGuestView() {
-    let guestElements = $('.user');
-    $.each(guestElements, function () {
-        $(this).addClass("d-none");
-    })
-    let userElements = $('.guest');
-    $.each(userElements, function () {
-        $(this).removeClass("d-none");
-    })
-    $('#feedback-email').val('');
-    $('#feedback-name').val('');
-    $('#feedback-email').prop("disabled", false);
-    $('#feedback-name').prop("disabled", false);
-}
+/**
+ *  show content which may be hidden for guests
+ */

@@ -46,11 +46,8 @@
 </ul>
     <div class="tab-content child" id="pills-tabContent">
         <div class="main tab-pane fade show active" id="main-home" role="tabpanel" aria-labelledby="main-home-tab">
-            <div class="child guest">
-                {include file='main.content/homepage.guests.tpl'}
-            </div>
-            <div class="child user d-none">
-                {include file='main.content/homepage.users.tpl'}
+            <div class="child">
+                {include file={$homepage}}
             </div>
         </div>
         <div class="main tab-pane fade" id="main-sendFeedback" role="tabpanel" aria-labelledby="main-sendFeedback-tab">
@@ -59,19 +56,13 @@
             </div>
         </div>
         <div class="main tab-pane fade" id="main-weather" role="tabpanel" aria-labelledby="main-weather-tab">
-            <div class="child guest">
-                {include file='main.content/hidden.content.tpl'}
-            </div>
-            <div class="child user d-none">
-
+            <div class="child">
+                {include file={$weather}}
             </div>
         </div>
         <div class="main tab-pane fade" id="main-feedbackList" role="tabpanel" aria-labelledby="main-feedbackList-tab">
-            <div class="child guest">
-                {include file='main.content/hidden.content.tpl'}
-            </div>
-            <div class="child user d-none">
-
+            <div class="{$user}">
+                {include file={$feedbackList}}
             </div>
         </div>
     </div>

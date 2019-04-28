@@ -57,7 +57,8 @@ function addNewFeedback($name, $email, $message){
             ";
         $result =  $mysqli->query($sql);
         if($result) {
-            $result = 'success';
+            $result = $result->fetch_assoc();
+            $result['success'] = 1;
         } else {
             $result = null;
         }
@@ -67,20 +68,11 @@ function addNewFeedback($name, $email, $message){
 
 
 /**
- * Add new feedback into database
+ * Get all of feedback from database
  */
-function getFeedbacks(){
+function getFeedback(){
     $mysqli = createDatabaseObject();
-    $sql = "SELECT * FROM feedbaks";
+    $sql = "SELECT * FROM feedbacks";
     $result = $mysqli->query($sql);
-    if($result) {
-        $result = $result->fetch_assoc();
-        $result['success'] = 1;
-        return $result;
-    }
-    else {
-        $result['success'] = 0;
-        $result['message'] = "Database error";
-    }
-
+    return $result;
 }

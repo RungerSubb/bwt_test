@@ -12,6 +12,7 @@ img{
 }
 .login-tabs{
     background: white;
+    border: 4px solid dodgerblue;
 }
 .new-user{
      width: 85%;
@@ -23,6 +24,7 @@ img{
 .user-back{
     height: max-content;
     background: white;
+    border: 4px solid dodgerblue;
 }
 
 @media (max-width: 720px) {
