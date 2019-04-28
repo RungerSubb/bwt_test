@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-28 18:44:38
+/* Smarty version 3.1.33, created on 2019-04-28 21:04:58
   from 'C:\xampp\htdocs\bwt_test.loc\views\default\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cc5d8766ada67_74583008',
+  'unifunc' => 'content_5cc5f95ae9a862_22333554',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aaa539548b6d5ebd20ab12a0f00637afe07b91e6' => 
     array (
       0 => 'C:\\xampp\\htdocs\\bwt_test.loc\\views\\default\\index.tpl',
-      1 => 1556469875,
+      1 => 1556478298,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:messages/success.wind.tpl' => 1,
   ),
 ),false)) {
-function content_5cc5d8766ada67_74583008 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cc5f95ae9a862_22333554 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
 <head>
     <title>Weather parser</title>
@@ -72,54 +72,54 @@ css/hidden.content.css" type="text/css">
 
 <ul class="nav nav-main mb-3 nav-pills"  id="main-tab" role="tablist">
     <li class="nav-item">
-        <a class="nav-link active" id="main-home-tab" data-toggle="pill" href="#main-home" role="tab" aria-controls="main-home" aria-selected="true">Home</a>
+        <a class="nav-link rounded-0 active" id="main-home-tab" data-toggle="pill" href="#main-home" role="tab" aria-controls="main-home" aria-selected="true">Home</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" id="main-sendFeedback-tab" data-toggle="pill" href="#main-sendFeedback" role="tab" aria-controls="main-sendFeedback" aria-selected="false">Send feedback</a>
+        <a class="nav-link rounded-0" id="main-sendFeedback-tab" data-toggle="pill" href="#main-sendFeedback" role="tab" aria-controls="main-sendFeedback" aria-selected="false">Send feedback</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" id="main-weather-tab" data-toggle="pill" href="#main-weather" role="tab" aria-controls="main-weather" aria-selected="false">Weather</a>
+        <a class="nav-link rounded-0" id="main-weather-tab" data-toggle="pill" href="#main-weather" role="tab" aria-controls="main-weather" aria-selected="false">Weather</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" id="main-feedbackList-tab" data-toggle="pill" href="#main-feedbackList" role="tab" aria-controls="main-feedbackList" aria-selected="false">Feedback list</a>
+        <a class="nav-link rounded-0" id="main-feedbackList-tab" data-toggle="pill" href="#main-feedbackList" role="tab" aria-controls="main-feedbackList" aria-selected="false">Feedback list</a>
     </li>
 </ul>
-    <div class="tab-content child" id="pills-tabContent">
-        <div class="main tab-pane fade show active" id="main-home" role="tabpanel" aria-labelledby="main-home-tab">
-            <div class="child">
-                <?php ob_start();
+<div class="tab-content child" id="pills-tabContent">
+    <div class="main tab-pane fade show active" id="main-home" role="tabpanel" aria-labelledby="main-home-tab">
+        <div class="child">
+            <?php ob_start();
 echo $_smarty_tpl->tpl_vars['homepage']->value;
 $_prefixVariable1 = ob_get_clean();
 $_smarty_tpl->_subTemplateRender($_prefixVariable1, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
 ?>
-            </div>
         </div>
-        <div class="main tab-pane fade" id="main-sendFeedback" role="tabpanel" aria-labelledby="main-sendFeedback-tab">
-            <div class="child">
-                <?php $_smarty_tpl->_subTemplateRender('file:main.content/feedback.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+    </div>
+    <div class="main tab-pane fade" id="main-sendFeedback" role="tabpanel" aria-labelledby="main-sendFeedback-tab">
+        <div class="child">
+            <?php $_smarty_tpl->_subTemplateRender('file:main.content/feedback.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
-            </div>
         </div>
-        <div class="main tab-pane fade" id="main-weather" role="tabpanel" aria-labelledby="main-weather-tab">
-            <div class="child">
-                <?php ob_start();
+    </div>
+    <div class="main tab-pane fade" id="main-weather" role="tabpanel" aria-labelledby="main-weather-tab">
+        <div class="child">
+            <?php ob_start();
 echo $_smarty_tpl->tpl_vars['weather']->value;
 $_prefixVariable2 = ob_get_clean();
 $_smarty_tpl->_subTemplateRender($_prefixVariable2, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
 ?>
-            </div>
         </div>
-        <div class="main tab-pane fade" id="main-feedbackList" role="tabpanel" aria-labelledby="main-feedbackList-tab">
-            <div class="<?php echo $_smarty_tpl->tpl_vars['user']->value;?>
+    </div>
+    <div class="main tab-pane fade" id="main-feedbackList" role="tabpanel" aria-labelledby="main-feedbackList-tab">
+        <div class="<?php echo $_smarty_tpl->tpl_vars['user']->value;?>
 ">
-                <?php ob_start();
+            <?php ob_start();
 echo $_smarty_tpl->tpl_vars['feedbackList']->value;
 $_prefixVariable3 = ob_get_clean();
 $_smarty_tpl->_subTemplateRender($_prefixVariable3, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
 ?>
-            </div>
         </div>
     </div>
+</div>
 
 
 <?php $_smarty_tpl->_subTemplateRender("file:messages/error.wind.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);

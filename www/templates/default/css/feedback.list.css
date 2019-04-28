@@ -18,17 +18,15 @@
     width: 90%;
     margin: auto auto;
 }
+@media (max-width: 1024px ) {
+    .fdb-base{
+        width: 49%;
+    }
+}
 
 @media (max-width: 720px) {
     .fdb-base{
         width: 98%;
-
     }
 }
 
-@media (max-width: 1024px) {
-    .fdb-base{
-        width: 49%;
-
-    }
-}

@@ -32,40 +32,40 @@
 
 <ul class="nav nav-main mb-3 nav-pills"  id="main-tab" role="tablist">
     <li class="nav-item">
-        <a class="nav-link active" id="main-home-tab" data-toggle="pill" href="#main-home" role="tab" aria-controls="main-home" aria-selected="true">Home</a>
+        <a class="nav-link rounded-0 active" id="main-home-tab" data-toggle="pill" href="#main-home" role="tab" aria-controls="main-home" aria-selected="true">Home</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" id="main-sendFeedback-tab" data-toggle="pill" href="#main-sendFeedback" role="tab" aria-controls="main-sendFeedback" aria-selected="false">Send feedback</a>
+        <a class="nav-link rounded-0" id="main-sendFeedback-tab" data-toggle="pill" href="#main-sendFeedback" role="tab" aria-controls="main-sendFeedback" aria-selected="false">Send feedback</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" id="main-weather-tab" data-toggle="pill" href="#main-weather" role="tab" aria-controls="main-weather" aria-selected="false">Weather</a>
+        <a class="nav-link rounded-0" id="main-weather-tab" data-toggle="pill" href="#main-weather" role="tab" aria-controls="main-weather" aria-selected="false">Weather</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" id="main-feedbackList-tab" data-toggle="pill" href="#main-feedbackList" role="tab" aria-controls="main-feedbackList" aria-selected="false">Feedback list</a>
+        <a class="nav-link rounded-0" id="main-feedbackList-tab" data-toggle="pill" href="#main-feedbackList" role="tab" aria-controls="main-feedbackList" aria-selected="false">Feedback list</a>
     </li>
 </ul>
-    <div class="tab-content child" id="pills-tabContent">
-        <div class="main tab-pane fade show active" id="main-home" role="tabpanel" aria-labelledby="main-home-tab">
-            <div class="child">
-                {include file={$homepage}}
-            </div>
-        </div>
-        <div class="main tab-pane fade" id="main-sendFeedback" role="tabpanel" aria-labelledby="main-sendFeedback-tab">
-            <div class="child">
-                {include file='main.content/feedback.tpl'}
-            </div>
-        </div>
-        <div class="main tab-pane fade" id="main-weather" role="tabpanel" aria-labelledby="main-weather-tab">
-            <div class="child">
-                {include file={$weather}}
-            </div>
-        </div>
-        <div class="main tab-pane fade" id="main-feedbackList" role="tabpanel" aria-labelledby="main-feedbackList-tab">
-            <div class="{$user}">
-                {include file={$feedbackList}}
-            </div>
+<div class="tab-content child" id="pills-tabContent">
+    <div class="main tab-pane fade show active" id="main-home" role="tabpanel" aria-labelledby="main-home-tab">
+        <div class="child">
+            {include file={$homepage}}
         </div>
     </div>
+    <div class="main tab-pane fade" id="main-sendFeedback" role="tabpanel" aria-labelledby="main-sendFeedback-tab">
+        <div class="child">
+            {include file='main.content/feedback.tpl'}
+        </div>
+    </div>
+    <div class="main tab-pane fade" id="main-weather" role="tabpanel" aria-labelledby="main-weather-tab">
+        <div class="child">
+            {include file={$weather}}
+        </div>
+    </div>
+    <div class="main tab-pane fade" id="main-feedbackList" role="tabpanel" aria-labelledby="main-feedbackList-tab">
+        <div class="{$user}">
+            {include file={$feedbackList}}
+        </div>
+    </div>
+</div>
 
 
 {include file="messages/error.wind.tpl"}

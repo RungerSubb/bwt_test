@@ -1,5 +1,6 @@
 body{
-background: white;
+    background: white;
+    position: relative;
 }
 .main{
     width: 100%;
@@ -22,12 +23,18 @@ background: white;
      margin-top: 7%;
      margin-left: 27.5%;
  }
-
  .nav-main{
      background: white;
-     height: 6%;
+     position: sticky;
+     z-index: 100;
+     height: max-content;
+     border-bottom-width: 4px;
+     border-bottom-style: solid;
+     border-bottom-color: dodgerblue;
  }
-
+.nav-link{
+    color: dodgerblue;
+}
 @media (max-width: 720px) {
     .btn{
         width: 100%;
@@ -39,4 +46,10 @@ background: white;
     .nav-item{
         font-size: 80%;
     }
+    .child {
+        background: transparent;
+        width: 80%;
+        margin-left: 10%;
+    }
+
 }

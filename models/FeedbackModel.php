@@ -72,7 +72,7 @@ function addNewFeedback($name, $email, $message){
  */
 function getFeedback(){
     $mysqli = createDatabaseObject();
-    $sql = "SELECT * FROM feedbacks";
+    $sql = "SELECT * FROM feedbacks ORDER BY id";
     $result = $mysqli->query($sql);
     return $result;
 }
