@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-27 20:50:44
+/* Smarty version 3.1.33, created on 2019-04-29 13:18:45
   from 'C:\xampp\htdocs\bwt_test.loc\views\default\main.content\homepage.guests.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cc4a484389479_70979859',
+  'unifunc' => 'content_5cc6dd95804459_39596629',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '079642c624ff0369af4e45f612d3a91731643b87' => 
     array (
       0 => 'C:\\xampp\\htdocs\\bwt_test.loc\\views\\default\\main.content\\homepage.guests.tpl',
-      1 => 1556391042,
+      1 => 1556536484,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cc4a484389479_70979859 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cc6dd95804459_39596629 (Smarty_Internal_Template $_smarty_tpl) {
 ?><nav>
     <div class="nav nav-tabs" id="nav-tab" role="tablist">
         <a class="nav-item nav-link active" id="login-first-tab" data-toggle="tab" href="#login-first" role="tab" aria-controls="login-first" aria-selected="true">Sign In</a>

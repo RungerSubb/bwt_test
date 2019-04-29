@@ -136,16 +136,15 @@ function login($email, $password){
     $password = htmlspecialchars($mysqli->real_escape_string($password), ENT_HTML401);
 
     $sql = "SELECT * FROM users
-                WHERE `email` = '$email' AND `password` = '$password'
+                WHERE (`email` = '$email' AND `password` = '$password')
                 LIMIT 1        
                 ";
 
-    $result = $mysqli->query($sql);
+    $result = $mysqli->query($sql)->fetch_assoc();
     if($result) {
-        $result = $result->fetch_assoc();
         $result ['success'] = 1;
     } else {
-        $result ['success'] = 0;
+        $result ['success'] = null;
     }
     return $result;
 }

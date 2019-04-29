@@ -11,37 +11,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/FeedbackModel.php">
+        <entry file="file://$PROJECT_DIR$/controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="688">
-              <caret line="65" column="19" lean-forward="true" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
+            <state relative-caret-position="340">
+              <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/default/index.tpl">
+        <entry file="file://$PROJECT_DIR$/www/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
-              <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+            <state relative-caret-position="170">
+              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/templates/default/css/main.css">
+        <entry file="file://$PROJECT_DIR$/models/UsersModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/templates/default/css/feedback.list.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="32" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="32" />
+            <state relative-caret-position="388">
+              <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -106,8 +97,6 @@
         <option value="$PROJECT_DIR$/views/default/main.content/homepage.guests.tpl" />
         <option value="$PROJECT_DIR$/www/index.php" />
         <option value="$PROJECT_DIR$/library/Smarty/libs/sysplugins/smarty_internal_template.php" />
-        <option value="$PROJECT_DIR$/controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/models/UsersModel.php" />
         <option value="$PROJECT_DIR$/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/views/default/main.content/feedback.tpl" />
         <option value="$PROJECT_DIR$/www/templates/default/css/homepage.css" />
@@ -116,13 +105,15 @@
         <option value="$PROJECT_DIR$/config/config.php" />
         <option value="$PROJECT_DIR$/controllers/FeedbackController.php" />
         <option value="$PROJECT_DIR$/views/default/main.content/feedback.list.tpl" />
-        <option value="$PROJECT_DIR$/www/js/main.js" />
         <option value="$PROJECT_DIR$/views/default/main.content/weather.tpl" />
         <option value="$PROJECT_DIR$/library/mainFunctions.php" />
         <option value="$PROJECT_DIR$/www/templates/default/css/feedback.list.css" />
         <option value="$PROJECT_DIR$/models/FeedbackModel.php" />
         <option value="$PROJECT_DIR$/views/default/index.tpl" />
         <option value="$PROJECT_DIR$/www/templates/default/css/main.css" />
+        <option value="$PROJECT_DIR$/controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/www/js/main.js" />
+        <option value="$PROJECT_DIR$/models/UsersModel.php" />
       </list>
     </option>
   </component>
@@ -134,7 +125,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-82" />
     <option name="y" value="-11" />
     <option name="width" value="902" />
@@ -145,6 +136,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,50 +147,28 @@
             <path>
               <item name="bwt_test.loc" type="b2602c69:ProjectViewProjectNode" />
               <item name="bwt_test.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bwt_test.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bwt_test.loc" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bwt_test.loc" type="b2602c69:ProjectViewProjectNode" />
               <item name="bwt_test.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bwt_test.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bwt_test.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bwt_test.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bwt_test.loc" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bwt_test.loc" type="b2602c69:ProjectViewProjectNode" />
               <item name="bwt_test.loc" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bwt_test.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bwt_test.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bwt_test.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bwt_test.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -267,11 +237,12 @@
       <workItem from="1556187433520" duration="3983000" />
       <workItem from="1556362395462" duration="29998000" />
       <workItem from="1556434116528" duration="31035000" />
+      <workItem from="1556536823316" duration="297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="325670000" />
+    <option name="totallyTimeSpent" value="325967000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -287,7 +258,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" weight="0.28333333" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.28333333" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.8926746" weight="0.32855567" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
@@ -479,13 +450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="61" column="36" lean-forward="true" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="433">
@@ -548,13 +512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/default/css/feedback.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -576,17 +533,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/UsersModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/default/css/hidden.content.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/FeedbackModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -597,24 +554,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/FeedbackModel.php">
+    <entry file="file://$PROJECT_DIR$/www/templates/default/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="65" column="19" lean-forward="true" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
+        <state relative-caret-position="289">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/default/index.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
+        <state relative-caret-position="17">
           <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/default/css/main.css">
+    <entry file="file://$PROJECT_DIR$/www/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        <state relative-caret-position="170">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/UsersModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
         </state>
       </provider>
     </entry>

@@ -61,7 +61,7 @@ function loginAction(){
     if(!$resData) {
         $password =  md5($password);
         $userData = login($email, $password);
-        if($userData) {
+        if($userData['success']) {
             $resData['success'] = 1;
             $resData['message'] = "Input completed successful";
             $_SESSION['user'] = $userData;
