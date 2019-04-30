@@ -5,20 +5,6 @@
 include_once '../models/FeedbackModel.php';
 
 /**
- * Get feedback list
- */
-function getAll(){
-    $result = getFeedback();
-    if(!$result) {
-        $result['success'] = 0;
-        $result['message'] = 'Sorry, we have no feedback';
-        return json_encode($result);
-    } else {
-        return( createOutputArray($result));
-    }
-}
-
-/**
  * Send new feedback to database
  */
 function sendAction(){

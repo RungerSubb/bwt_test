@@ -2,7 +2,8 @@
 /**
  * main controller
  */
-
+include_once '../models/FeedbackModel.php'; //for show feedback list
+include_once '../models/WeatherModel.php'; //for parse weather
 /**
  * Load start page
  *
@@ -22,7 +23,17 @@ function indexAction($smarty){
 
 function registeredAction($smarty){
     $feedbackList = getAll();
+    $weather = getTodayWeatherData(getWeather());
+    $image = getFileName($weather['weather']);
 
+
+    $smarty->assign('weatherImage', $image);
+    $smarty->assign('city', $weather['city']);
+    $smarty->assign('country', $weather['country']);
+    $smarty->assign('temperature', $weather['temperature']);
+    $smarty->assign('humidity', $weather['humidity']);
+    $smarty->assign('sunrise', $weather['sunrise']);
+    $smarty->assign('sunset', $weather['sunset']);
 
     $smarty->assign('name', $_SESSION['user']["firstName"]);
     $smarty->assign('lastName', $_SESSION['user']["lastName"]);

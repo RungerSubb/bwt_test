@@ -8,7 +8,6 @@ session_start();
 define('PathPrefix', '../controllers/');
 define('PathPostfix', 'Controller.php');
 //<
-
 //> using template
 $template = 'default';
 
@@ -19,10 +18,9 @@ define('TemplatePostfix', '.tpl');
 // way to template files in web
 define('TemplateWebPath', "/templates/{$template}/");
 //<
-define('fdb-show', "
 
-
-");
+//link for parse
+define('WeatherLink', 'https://weather.yahoo.com/');
 //initialize template engine Smarty
 require('../library/Smarty/libs/Smarty.class.php');
 $smarty = new Smarty();

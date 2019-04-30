@@ -27,19 +27,6 @@ function loadTemplate($smarty, $templateName){
     $smarty->display(TemplatePrefix . $templateName . TemplatePostfix);
 }
 
-/**
- * debug function
- *
- * @param null $value
- * @param $die
- */
-function db($value = null, $die = 1){
-    echo "Debug: <br/><pre>";
-    print_r($value);
-    echo '<pre/>';
-    if($die)die();
-}
-
 
 /**
  * Create array of feedbacks for show
@@ -91,4 +78,99 @@ function createOneMoreFeedbackForm($name, $email, $message){
         </div>
         ";
     return $html;
+}
+/**
+ * create object for connecting to database
+ *
+ * @return mysqli database object
+ */
+
+function createDatabaseObject()
+{
+    $databaseLocation = "127.0.0.1";
+    $databaseName = "bwt";
+    $databaseUser = "root";
+    $databasePassword = "";
+
+    $database = new mysqli($databaseLocation, $databaseUser, $databasePassword, $databaseName);
+
+    if (!$database) {
+        echo 'Access Error MySQL';
+        exit();
+    }
+
+    mysqli_set_charset($database, 'utf8');
+
+    if (!mysqli_select_db($database, $databaseName)) {
+        echo 'error in ' . $databaseName;
+        exit();
+    }
+    return $database;
+}
+
+
+/**
+ * get needed data from request result
+ *
+ * @param $data request result
+ * @return array data for output
+ */
+function getTodayWeatherData($data){
+    return [
+        'city' => $data->location->city,
+        'country' => $data->location->country,
+        'temperature' => intval((doubleval($data->current_observation->condition->temperature)  - 32) * 5/9),
+        'weather' => $data->current_observation->condition->text,
+        'humidity' => $data->current_observation->atmosphere->humidity,
+        'sunset' => $data->current_observation->astronomy->sunset,
+        'sunrise' => $data->current_observation->astronomy->sunrise
+    ];
+}
+
+
+/**
+ * get name of weather image
+ *
+ * @param $weatherText weather description
+ * @return string|null name of image
+ */
+function getFilename($weatherText){
+    $result = '.png';
+    switch ($weatherText){
+        case 'Cloudy':
+        case 'Mostly Cloudy':
+            $result = 'mostly_cloudy' . $result;
+            break;
+        case 'Sunny':
+            $result = 'sunny' . $result;
+            break;
+        case 'Partly Cloudy':
+        case 'Fair':
+            $result = 'partly_cloudy' . $result;
+            break;
+        case 'Isolated Thundershowers':
+        case 'Showers':
+            $result = 'shower' . $result;
+        case 'Scattered Thunderstorms':
+        case 'Storms':
+            $result = 'storm' . $result;
+            break;
+        default:
+            $result = 'snow' . $result;
+            break;
+    }
+    return $result;
+}
+
+/**
+ * debug function
+ *
+ * @param null $value
+ * @param $die
+ */
+function db($value = null, $die = 1){
+    echo "Debug: <br/><pre>";
+    print_r($value);
+    echo '<pre/>';
+    if($die)die();
 }

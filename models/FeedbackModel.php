@@ -68,11 +68,11 @@ function addNewFeedback($name, $email, $message){
 
 
 /**
- * Get all of feedback from database
+ * Get feedback list
  */
-function getFeedback(){
+function getAll(){
     $mysqli = createDatabaseObject();
     $sql = "SELECT * FROM feedbacks ORDER BY id";
     $result = $mysqli->query($sql);
-    return $result;
+    return (createOutputArray($result));
 }
