@@ -6,6 +6,15 @@ require_once '../vendor/autoload.php';
 use GuzzleHttp\Client as Client;
 
 
+/**
+ * build basic url for request
+ *
+ * @param $baseURI
+ * @param $method
+ * @param $params
+ *
+ * @return string result url
+ */
 function buildBaseString($baseURI, $method, $params) {
     $r = array();
     ksort($params);
@@ -14,6 +23,16 @@ function buildBaseString($baseURI, $method, $params) {
     }
     return $method . "&" . rawurlencode($baseURI) . '&' . rawurlencode(implode('&', $r));
 }
+
+/**
+ * build header part for request
+ *
+ * @param $baseURI
+ * @param $method
+ * @param $params
+ *
+ * @return string
+ */
 function buildAuthorizationHeader($oauth) {
     $r = 'Authorization: OAuth ';
     $values = array();
@@ -24,6 +43,12 @@ function buildAuthorizationHeader($oauth) {
     return $r;
 }
 
+
+/**
+ * main request function
+ *
+ * @return request result
+ */
 function getWeather(){
     $url = 'https://weather-ydn-yql.media.yahoo.com/forecastrss';
     $app_id = '4KOfPH4k';

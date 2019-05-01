@@ -151,6 +151,7 @@ function getFilename($weatherText){
         case 'Isolated Thundershowers':
         case 'Showers':
             $result = 'shower' . $result;
+            break;
         case 'Scattered Thunderstorms':
         case 'Storms':
             $result = 'storm' . $result;

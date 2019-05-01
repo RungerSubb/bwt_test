@@ -5,7 +5,7 @@
 include_once '../models/FeedbackModel.php'; //for show feedback list
 include_once '../models/WeatherModel.php'; //for parse weather
 /**
- * Load start page
+ * Load page
  *
  * @param $smarty template engine
  */
@@ -20,12 +20,15 @@ function indexAction($smarty){
     loadTemplate($smarty, 'index');
 
 }
-
+/**
+ * Load page for registered users
+ *
+ * @param $smarty template engine
+ */
 function registeredAction($smarty){
     $feedbackList = getAll();
     $weather = getTodayWeatherData(getWeather());
     $image = getFileName($weather['weather']);
-
 
     $smarty->assign('weatherImage', $image);
     $smarty->assign('city', $weather['city']);
